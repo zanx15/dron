@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewpoint" content="with=device-width, initial-scale=1.0">
+    <title>ZT Dron</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="slikice/ZT DRON LOGO 4.0.pdf"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>                
+                <ul>
+                    <li><a href="index.html">DOMOV</a></li>
+                    <li><a href="Projekti.html">PROJEKTI</a></li>
+                    <li><a href="kontakt.html">KONTAKT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        
+<div class="text-box">
+        <h1>PROFESIONALNA ZRA&#268NA FOTOGRAFIJA IN VIDEO</h1>
+            
+            <a href="#nudimo" class = "hero-btn">Izvedi ve&#269</a> <!---narejen  gumb izvedi več, ki pelje na id="nudimo"--->
+    
+        </div>
+   </section>   
+
+<!------ JAVASCRIP scroll ------->
+    
+    
+<!------ kaj nudimo ------->
+        
+<section id="nudimo" class="nudimo">
+    <h1>Storitve</h1>
+    <p>"Najdemo re&#353itev za vsako &#382eljo."</p>
+    
+    <div class= "stolpci">
+        <div class="course-col">
+            <h3>Fotografija parcel/gradbi&#353&#269</h3>
+            <p>Ponujamo fotografiranje pred gradnjo, med njo in po njej. Te fotografije so posebej uporabne za zarisovanje priklju&#269kov, postavitve objektov in vizualizacijo okoljskih elementov. Omgo&#269ajo tudi la&#382je izra&#269une koli&#269ine materiala za izgradnjo vodov, drena&#382 itd.</p>
+        </div>
+        <div class="course-col">
+            <h3>Zra&#269na fotografija</h3>
+            <p>Zra&#269na fotografija ima dodano vrednost napram navadni. Fotografiramo vse vrste objektov in narave za zasebne namene. Prav tako fotografiramo za namen turizma in  ogla&#353evanja ter prodaje stavb, zemlji&#353&#269, nastanitev, gostinjskih obratov. </p>
+        </div>
+        <div class="course-col">
+            <h3>Fotografija te&#382ko dostopnih mest</h3>
+            <p>Dolo&#269ena mesta so prakti&#269no nedostopna ali te&#382je dostopna. Ker ne &#382eilimo tvegati in se tja podati, lahko zadevo fotografiramo / posnamemo z dronom, brez tveganj. Primer je zama&#353en dimnik na vi&#353ji stavbi, kamor je dostop ote&#382en.</p>
+        </div>
+        <div class="course-col">
+            <h3>Video</h3>
+            <p>Ustvarjamo video vsebine za profesionalne video klipe, spote, oglase in promocije. Uporabljamo standarde do vklju&#269no 4K. Mo&#382en je tudi po&#269asen posnetek, posebej uporaben za akcije in "kinematiko".</p>
+        </div>
+        
+
+    </div>
+
+        
+</section>
+    
+<!------slike pod opisom "nudimo"----->
+<section class="slike">
+    
+    <div class="row">
+        <div class="slike-col">
+            <img src="slikice/DJI_0152.jpeg">
+            <div class="layer">
+                <h2>Fotografija parcel/gradbi&#353&#269</h2>
+            </div>
+        </div>
+         <div class="slike-col">
+            <img src="slikice/zacna_fotka.jpeg">
+            <div class="layer">
+                <h2>Zra&#269na fotografija</h2>
+            </div>
+        </div>
+         <div class="slike-col">
+            <img src="slikice/dimnik.jpg.jpeg">
+            <div class="layer">
+                <h2>Fotografija te&#382ko dostopnih elementov</h2>
+            </div>
+        </div>
+        <div class="slike-col">
+            <img src="slikice/Screenshot 2022-12-21 at 12.52.17.jpeg">
+            <div class="layer">
+                <h2>VIDEO</h2>
+            </div>
+        </div>
+        
+    </div>
+    
+</section>
+
+<!------Footer------->
+<section class="footer">
+    <h1>O nas</h1>
+    <p>ZT Drone<br>Vsa media, objavljena na spletni strani ZT Drone, je avtorsko delo ekipe in je avtorsko za&#353&#269itena.</p>
+    <div class="ikone">
+        <i class="fa fa-facebook" ></i>
+        <i class="fa fa-instagram" ></i>
+        <i class="fa fa-twitter" ></i>
+        <i class="fa fa-envelope" ></i>
+    </div>
+
+</section>
+    
+<!------JavaScript for toggle menu------>   
+<script>
+    
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0"
+    }
+    function hideMenu(){
+        navLinks.style.right = "-211px"
+    }
+    
+    </script>
+<!------JavaScript for toggle menu------>   
+    <script>
+    document.querySelectorAl1('a[href^="#"] ').forEach (anchor => {
+        anchor.addEventListener("click", function(e){
+            // e.preventDefault();
+            document.querySelector(this.getAttribute("href")).scrollIntoview({
+                behavior : "smooth"
+            });
+        });
+    });
+
+    </script>
+    
+</body>
+</html>
