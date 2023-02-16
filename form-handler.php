@@ -4,7 +4,7 @@ $visitor_email = $_POST ['email'];
 $subject = $_POST ['subject'];
 $message = $_POST ['message'];
 
-$email_form = 'info@ZT-drone.si';  /*info@ime domene*/
+$email_form = 'zan.veng@gmail.com';  /*info@ime domene*/
 
 $email_subject = 'New Form Submition';
 
